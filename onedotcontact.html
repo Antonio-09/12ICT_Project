@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OneDot. coffee</title>
+    <style>
+        /* Simple Blink (On/Off) */
+        @keyframes simpleBlink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .simple-blink {
+            animation: simpleBlink 1s infinite;
+        }
+        body {
+            font-family: forte;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #A0522D;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 30px;
+            margin: 0;
+        }
+        nav {
+            background-color: #D2B48c;
+        }
+	.button {
+            text-decoration: none;
+            text-transform: uppercase;
+            letter spacing: 1px;
+            color: #fff;
+            outline: 1px; solid #fff;
+            padding: 10px 25px;
+            position: relative;
+            overflow: hidden;
+            transition: color 1s;
+	}
+	.button:hover {
+            color: #A0522D;
+        }
+	.button: :before {
+            content:'';
+            position: absolute;
+            top: 0;
+            left; -50px;
+            width: 0;
+            height: 100%;
+            background-color: #A0522D;
+            transform: skewX(35deg);
+            z-index: -1;
+            transition: width 1s;
+	}
+	.button:hover::before {
+            width: 150%;
+	}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        section {
+            background-color: #FFE4C4;
+            padding: 10px;
+            margin: 10px 0;
+        }
+	h4 {
+	   color: #A0522D;
+	}
+        footer {
+            background-color: #A0522D;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="simple-blink">OneDot. coffee</h1>
+    </header>
+    <nav>
+	<center>
+          <div class="container">
+                <a href="file:///C:/Onedotwebpage/onedot.html" class="button">Home</a>
+                <a href="file:///C:/Onedotwebpage/onedotAbout.html" class="button">About Us</a>
+		<a href="file:///C:/Onedotwebpage/onedotProduct.html" class="button">Product</a>
+    		<a href="file:///C:/Onedotwebpage/onedotBlogs.html" class="button">Blog</a>
+                <a href="file:///C:/Onedotwebpage/onedotcontact.html" class="button">Contact</a>    
+          </div>
+	</center>
+    </nav>
+    <div class="container">
+	<section>
+	 <center>
+ 	  <h4>Address</h4>
+	  <p>Phase 4c, Bagong Silang Caloocan City, Caloocan, Philippines, 1428</p>
+	  <h4>Mobile Number</h4>
+	  <p>09157405409</p>
+	  <h4>Email</h4>
+	  <p>onedotcafe@gmail.com</p>
+	  <h4>instagram</h4>
+	  <p>onedot.coffee</p>
+	  <a href="file:///C:/Users/karlo/OneDrive/Pictures/Documents/onedot.html">IG</a>
+          <h4>FB.page</h4>
+	  <p>OneDot. Coffee</p>
+	  <a href="www.facebook.com/onedotcafe?mibextid=LQQJ4d">FB.page</a>
+	 </center>
+	</section>
+    </div>
+    <footer>
+	&copy; 2023 OneDot. Coffee. All rights reserved.
+    </footer>
+</body>
+</html>

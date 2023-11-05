@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OneDot. coffee</title>
+    <style>
+        /* Simple Blink (On/Off) */
+        @keyframes simpleBlink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .simple-blink {
+            animation: simpleBlink 1s infinite;
+        }
+        body {
+            font-family: forte;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #A0522D;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 30px;
+            margin: 0;
+        }
+        nav {
+            background-color: #D2B48c;
+        }
+	.button {
+            text-decoration: none;
+            text-transform: uppercase;
+            letter spacing: 1px;
+            color: #fff;
+            outline: 1px; solid #fff;
+            padding: 10px 25px;
+            position: relative;
+            overflow: hidden;
+            transition: color 1s;
+	}
+	.button:hover {
+            color: #A0522D;
+        }
+	.button: :before {
+            content:'';
+            position: absolute;
+            top: 0;
+            left; -50px;
+            width: 0;
+            height: 100%;
+            background-color: #A0522D;
+            transform: skewX(35deg);
+            z-index: -1;
+            transition: width 1s;
+	}
+	.button:hover::before {
+            width: 150%;
+	}
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        section {
+            background-color: #FFE4C4;
+            padding: 10px;
+            margin: 10px 0;
+	    font-size: 12px;
+            margin: 0;
+	}
+	h4 {
+	   color: #A0522D;
+	}
+        footer {
+            background-color: #A0522D;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+	}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="simple-blink">OneDot. coffee</h1>
+    </header>
+    <nav>
+	<center>
+          <div class="container">
+                <a href="file:///C:/Onedotwebpage/onedot.html" class="button">Home</a>
+                <a href="file:///C:/Onedotwebpage/onedotAbout.html" class="button">About Us</a>
+		<a href="file:///C:/Onedotwebpage/onedotProduct.html" class="button">Product</a>
+    		<a href="file:///C:/Onedotwebpage/onedotBlogs.html" class="button">Blog</a>
+                <a href="file:///C:/Onedotwebpage/onedotcontact.html" class="button">Contact</a>    
+          </div>
+	</center>
+    </nav>
+    <div class="container">
+        <section>
+            <h4><u>About Us</h4></u>
+            <p>In OneDot. Coffee, we're a community of coffee lovers committed to giving you the best coffee experience in town. We're more than simply a spot to get your caffeine addiction.</p>
+	    <h4><u>Our Story</h4></u>
+	    <p>OneDot was established by a committed group of coffee lovers. Coffee started as a dream to build a place where people could enjoy a perfect shot of coffee and interact with one another. As time has passed, that dream has transformed into a treasured neighborhood gathering place, where relationships grow and memories are told over warm mugs of carefully brewed coffee.</p>
+	    <h4><u>Our Coffee</h4></u>
+	    <p>We take pride in finding the best coffee beans available abroad. Every espresso shot, pour-over, and cappuccino is meticulously handcrafted by our baristas, each of whom is a talented artisan. We have something to satisfy every coffee connoisseur, whether you prefer a rich and strong roast or a delicate and nuanced blend.</p>
+	    <h4><u>Our lovely Space</h4></u>
+	    <p>The aroma of freshly brewed coffee and the friendly smiles of our staff welcome you as you visit our outdoor coffee shop. It's the perfect location to unwind, catch up on work, or enjoy relaxing moments thanks to our personal spots and comfortable chairs. We cordially welcome you to take your time, enjoy a cup of coffee, and relax in the pleasant surroundings we have put together for you.</p>
+	    <h4><u>Join Us</h4></u>
+	    <p>In OneDot. coffee, we're a family and not just a coffee business. We would like to invite you to join us in enjoying the little pleasures of life while sharing our passion for coffee. You are always welcome to join our coffee-loving community, whether you visit our shop regularly or this is your first time here.</p
+	    <p>We appreciate you being a part of our journey and look forward to having coffee with you.</p>
+        </section>
+    </div>
+   <footer>
+	&copy; 2023 OneDot. Coffee. All rights reserved.
+   </footer>
+</body>
+</html>
